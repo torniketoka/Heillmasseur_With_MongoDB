@@ -1,0 +1,11 @@
+version: '2'
+services:
+  mongodb:
+    image: bitnami/mongodb:latest
+    environment:
+      MONGODB_USERNAME: imse_user
+      MONGODB_PASSWORD: massage
+      MONGODB_DATABASE: mongo_massage
+      MONGODB_ROOT_PASSWORD: imse3
+    ports:
+    - 27017:27017/tcp

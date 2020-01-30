@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group 'mongo_client'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile 'org.mongodb:mongodb-driver:3.4.3'
+}

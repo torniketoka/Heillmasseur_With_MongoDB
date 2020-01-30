@@ -1,0 +1,35 @@
+Dataimport.jar   --> liegt in Dataimport Folder
+java - jar Dataimport.jar    
+
+mongo_client.jar --> leigt in mongo_client Folder
+
+
+Arzt 
+
+  
+// Check ob migration erfolgreich durchgeführt werden.
+java -jar mongo_client.jar Arzt read         
+// Create Arzt                             
+java -jar mongo_client.jar Arzt create 1234 kul hakan guenokologie 101 tornike kha 1220 wien waehiring 05-07-1987 1234 krank 12-12-2019  
+// Search Arzt     
+java -jar mongo_client.jar Arzt read               
+// Update Arzt                                                                            
+java -jar mongo_client.jar Arzt update 5d0a1f0021c0730c9ec86931 NEUROLOGE   
+// Delete Arzt                                                                 
+java -jar mongo_client.jar Arzt delete 1234  
+
+
+Behandlung                                                                                               
+
+// Check ob migration erfolgreich durchgeführt werden.
+java -jar mongo_client.jar Behandlung read    
+ // Create Behandlung
+java -jar mongo_client.jar Behandlung create 17 102 05-07-1989 Fusmassage 80 1 HeilmassageRaum 4 
+// Search Behandlung 
+java -jar mongo_client.jar Behandlung read    
+//Update Behandlung
+java -jar mongo_client.jar Behandlung update 5d0a24f2d754211d2ef81fd7 Ruckmassage 
+// Delete behandlung
+java -jar mongo_client.jar Behandlung delete 17
+
+
